@@ -1,17 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int x = 10021;
+    int x;
+    printf("Input integer:\n");
+    scanf("%d", &x);
 
-    printf("Integer x:\n");
-    printf("%d", x);
-
-    printf("\nInteger x converted to float:\n");
+    printf("Integer x converted to float:\n");
     printf("%f", (float)x);
 
 
     printf("\nInteger x converted to char:\n");
-    printf("%hhd", (char)x);
+    printf("%c", (char)x);
 
     return 0;
 }

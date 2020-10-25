@@ -14,7 +14,7 @@ int main() {
         } else{
             negative++;
         }
-    }op
+    }
 
     if(positive > negative){
         printf("There are more positive numbers.");

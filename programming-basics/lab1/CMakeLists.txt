@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.17)
+project(lab1 C)
+set(CMAKE_C_STANDARD 99)
+
+add_executable(e1-check-bits-5-11 e1-check-bits-5-11/main.c)
+add_executable(e2-output-string-float-from-int e2-output-string-float-from-int/main.c)
+add_executable(e3-calculator e3-calculator/main.c)
+add_executable(e4-min-max e4-min-max/main.c)
+add_executable(e5-is-big-letter e5-is-big-letter/main.c)
+add_executable(e6-more-positive-or-negative e6-more-positive-or-negative/main.c)
