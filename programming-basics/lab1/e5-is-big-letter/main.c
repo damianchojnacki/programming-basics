@@ -1,17 +1,18 @@
 #include <stdio.h>
+#include <ctype.h>
 
 int main() {
-    printf("Input character:\n");
+    printf("Input letter:\n");
 
     char input;
 
     scanf(" %c", &input);
 
     //Big characters in ASCII table are between 65 and 90.
-    if(input > 64 && input < 91){
-        printf("It is big character.");
+    if(isupper(input)){
+        printf("It is big letter.");
     } else {
-        printf("It is not big character.");
+        printf("It is not big letter.");
     }
 
     return 0;

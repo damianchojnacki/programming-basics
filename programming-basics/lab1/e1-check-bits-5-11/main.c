@@ -27,7 +27,7 @@ int main() {
     if(bit5Equals1 && bit11Equals1){
         printf("Bit 5 and 11 have value 1.");
     } else {
-        printf("Bit 5 or 11 don't have value 1.");
+        printf("Bit 5 or 11 doesn't have value 1.");
     }
 
     return 0;

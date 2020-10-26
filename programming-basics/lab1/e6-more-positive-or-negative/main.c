@@ -18,7 +18,9 @@ int main() {
 
     if(positive > negative){
         printf("There are more positive numbers.");
-    } else{
+    } else if(positive == negative){
+        printf("There are the same number of positive and negative numbers.");
+    } else {
         printf("There are more negative numbers.");
     }
 

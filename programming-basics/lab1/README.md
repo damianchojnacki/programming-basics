@@ -52,9 +52,9 @@ The minimum number is -10
 Program sprawdzający czy podany z klawiatury znak to duża litera.<br>
 [e5-is-big-letter](./e5-is-big-letter/main.c)
 ```C
-Input character:
+Input letter:
 A
-It is big character.
+It is big letter.
 ```
 
 ### Zad. 6
