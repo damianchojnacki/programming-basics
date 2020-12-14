@@ -5,9 +5,9 @@
 #ifndef ZADANIE3_SILNIA_H
 #define ZADANIE3_SILNIA_H
 
-long long powerIteration(int number){
-    long long power = 1;
+long long power = 1;
 
+long long powerIteration(int number){
     for(int i = number; i > 1; i--){
         power *= i;
     }

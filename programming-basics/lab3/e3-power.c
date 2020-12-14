@@ -4,7 +4,7 @@
 int readNumber(){
     int number;
 
-    printf("Podaj liczbe:\n");
+    printf("Please enter integer:\n");
     scanf("%d", &number);
 
     return number;
@@ -13,8 +13,13 @@ int readNumber(){
 int main(){
     int number = readNumber();
 
-    printf("Silnia z %d to %lld\n", number, powerIteration(number));
-    printf("Silnia z %d to %lld", number, powerRecursive(number));
+    power = powerIteration(number);
+
+    printf("%d! = %lld\n", number, power);
+
+    power = powerRecursive(number);
+
+    printf("%d! = %lld", number, power);
 
     return 0;
 }

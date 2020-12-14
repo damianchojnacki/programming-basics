@@ -3,12 +3,12 @@
 #include <ctype.h>
 
 int readNumber(){
-    char t[128] = "";
+    char t[32] = "";
 
     printf("Please enter positive integer:\n");
     scanf("%10s", t);
 
-    for(int i = 0; i <= 128 && t[i] != '\0'; i++ ){
+    for(int i = 0; i <= 32 && t[i] != '\0'; i++ ){
         if(isalpha(t[i])){
             printf("Wrong datatype.");
             exit(1);
@@ -47,7 +47,7 @@ int dec2bin(int number){
 int main(){
     int number = readNumber();
 
-    printf("Liczba binarna z %d to %d", number, dec2bin(number));
+    printf("Binary representation of %d = %d", number, dec2bin(number));
 
     return 0;
 }
