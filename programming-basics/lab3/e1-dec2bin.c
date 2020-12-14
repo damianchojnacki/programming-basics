@@ -8,14 +8,14 @@ int readNumber(){
     printf("Please enter positive integer:\n");
     scanf("%10s", t);
 
-    for(int i = 0; i <= 128; i++ ){
+    for(int i = 0; i <= 128 && t[i] != '\0'; i++ ){
         if(isalpha(t[i])){
             printf("Wrong datatype.");
             exit(1);
         }
     }
 
-    float number = strtod(t, NULL);
+    double number = strtod(t, NULL);
 
     if(number < 0){
         printf("Only positive numbers are allowed.");
